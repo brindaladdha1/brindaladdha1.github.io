@@ -387,6 +387,76 @@ h1, h2, h3, h4 {
   margin: 4px 0 0;
 }
 
+/* Video callout (Education section) */
+.video-callout {
+  margin-top: 30px;
+  border: 1px solid var(--lightest-navy);
+  border-radius: 10px;
+  padding: 20px;
+  background: var(--light-navy);
+}
+
+.video-callout__label {
+  font-family: var(--font-mono);
+  color: var(--blue);
+  font-size: 13px;
+  margin: 0 0 14px;
+}
+
+.video-callout__frame {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--lightest-navy);
+}
+
+.video-callout__frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Resume embed (Contact section) */
+.resume-embed {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.resume-embed__label {
+  font-family: var(--font-mono);
+  color: var(--blue);
+  font-size: 13px;
+  text-align: center;
+  margin: 0 0 14px;
+}
+
+.resume-embed__frame {
+  width: 100%;
+  height: 500px;
+  border: 1px solid var(--lightest-navy);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--light-navy);
+  margin-bottom: 16px;
+}
+
+.resume-embed__frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.resume-embed .ghost-button {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 /* Experience tabs */
 .experience-grid {
   display: grid;
@@ -688,6 +758,8 @@ h1, h2, h3, h4 {
   .leadership-item { flex-direction: column; align-items: flex-start; gap: 6px; }
   .leadership-item__date { min-width: unset; }
   .container { padding: 0 24px; }
+  .video-callout__frame { max-width: 100%; }
+  .resume-embed__frame { height: 340px; }
 }
 
 .site-nav.is-open {
