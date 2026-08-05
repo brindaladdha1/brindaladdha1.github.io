@@ -216,6 +216,20 @@ h1, h2, h3, h4 {
   filter: grayscale(15%) contrast(1.02);
 }
 
+.portrait-frame--subtle {
+  width: 210px;
+  height: 210px;
+  border-width: 1px;
+  border-color: var(--lightest-navy);
+  box-shadow: 0 0 0 5px var(--blue-tint);
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.portrait-frame--subtle:hover {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 8px var(--blue-tint);
+}
+
 .edge-rail {
   position: fixed;
   bottom: 0;
@@ -521,6 +535,52 @@ h1, h2, h3, h4 {
 .project-card__metrics strong { color: var(--blue); font-size: 20px; font-family: var(--font-mono); }
 .project-card__metrics span { font-size: 12px; color: var(--slate); }
 
+/* Writing */
+.writing-intro {
+  color: var(--slate);
+  font-size: 15px;
+  max-width: 640px;
+  margin: -20px 0 30px;
+}
+
+.writing-list { display: flex; flex-direction: column; }
+
+.writing-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--lightest-navy);
+}
+
+.writing-item__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.writing-item h3 { font-size: 16px; color: var(--lightest-slate); }
+
+.writing-item__date {
+  font-family: var(--font-mono);
+  color: var(--blue);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.writing-item__type {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--slate);
+  margin: 4px 0 8px;
+}
+
+.writing-item p.writing-item__blurb {
+  margin: 0;
+  font-size: 14px;
+  color: var(--slate);
+  max-width: 720px;
+}
+
 /* Leadership */
 .leadership-list { display: flex; flex-direction: column; }
 
@@ -541,6 +601,16 @@ h1, h2, h3, h4 {
 
 .leadership-item h3 { font-size: 16px; margin-bottom: 4px; }
 .leadership-item p { margin: 0; font-size: 14px; color: var(--slate); }
+
+.leadership-item__link {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--blue);
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.leadership-item__link:hover { text-decoration: underline; }
 
 /* Contact */
 .section--contact { text-align: center; border-top: none; padding-top: 40px; }

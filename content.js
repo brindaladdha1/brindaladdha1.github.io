@@ -80,9 +80,9 @@ window.portfolioContent = {
       title: "Sonic Automotive Inventory & UX Research",
       categories: ["Data Analysis", "UX Research"],
       dates: "Summer 2025",
-      problem: "Inconsistent inventory allocation across regions and unclear drivers behind test-drive drop-off.",
-      approach: "Analyzed inventory data across 15+ U.S. regions to surface allocation trends, then led UX research with 40+ participants and synthesized findings into weekly stakeholder reports.",
-      tools: ["Excel Modelling", "UX Research", "Stakeholder Reporting"],
+      problem: "Inconsistent inventory allocation across regions, and unclear drivers behind test-drive drop-off across Sonic's dealership websites.",
+      approach: "Audited Sonic Automotive's dealership websites across multiple regional brand sites, evaluating navigation, content clarity, and conversion paths, then paired that with primary UX research (40+ participants) to translate findings into per-branch recommendations. Separately analyzed inventory data across 15+ regions to surface allocation trends and improve efficiency.",
+      tools: ["UX Audit", "Excel Modelling", "UX Research", "Stakeholder Reporting"],
       metrics: [
         { value: "+18%", label: "Increase in test-drive bookings" },
         { value: "15+", label: "U.S. regions analyzed" }
@@ -100,6 +100,76 @@ window.portfolioContent = {
         { value: "10+", label: "Investor pitch calls supported" },
         { value: "3", label: "Age groups tested across ~10 localities" }
       ]
+    },
+    {
+      icon: "trend",
+      title: "NASDAQ Forecasting with Multiple Linear Regression",
+      categories: ["Statistics", "R"],
+      dates: "December 2024",
+      problem: "Needed a defensible model for forecasting NASDAQ performance from a wide field of macroeconomic and market indicators.",
+      approach: "Built a multiple linear regression model in R on a 70/30 train-test split, then iteratively refined it by removing high-p-value predictors (oil, gold, crypto volatility, recession and election flags) one at a time and re-validating, before checking residuals with Q-Q plots, confidence intervals, and ANOVA.",
+      tools: ["R", "Regression", "Feature Selection", "Residual Diagnostics"],
+      metrics: [
+        { value: "70/30", label: "Train / test split for validation" },
+        { value: "MSE", label: "Model evaluated on test-set prediction error" }
+      ]
+    },
+    {
+      icon: "honey",
+      title: "Hive & Home Honey Co.",
+      categories: ["Entrepreneurship", "Summer Project"],
+      dates: "Summer Project",
+      problem: "A backyard apiary at home left us with 50–60kg of surplus honey and no existing sales channel.",
+      approach: "Co-founded and ran a small direct-to-consumer honey business with my mom: sourced jars and packaging, set pricing, and sold the full harvest through local and word-of-mouth channels over one summer.",
+      tools: ["Pricing", "Packaging", "Direct-to-Consumer Sales"],
+      metrics: [
+        { value: "50–60kg", label: "Honey harvested and sold out" },
+        { value: "$200", label: "Profit from a self-funded summer venture" }
+      ]
+    }
+  ],
+  writing: [
+    {
+      title: "Conflict and Identity in The Palace of Illusions",
+      type: "IB Extended Essay — English A",
+      date: "May 2023",
+      blurb: "3,900-word close reading of Chitra Banerjee Divakaruni's retelling of the Mahabharata, examining how internal and external conflict shape Panchali's evolving sense of self."
+    },
+    {
+      title: "Conflict and Identity in Persepolis",
+      type: "IB Higher Level Essay — English A: Literature",
+      date: "May 2023",
+      blurb: "Analysis of how political upheaval in 1980s Iran shapes Marji's coming-of-age in Marjane Satrapi's graphic memoir."
+    },
+    {
+      title: "BMI Change: Boarding School vs. Home",
+      type: "IB Mathematics IA — Analysis & Approaches SL",
+      date: "May 2023",
+      blurb: "Applied a paired t-test, Q-Q plots, and normal distribution testing to self-collected data investigating how routine affects body weight."
+    },
+    {
+      title: "Salt Concentration & Plant Growth",
+      type: "IB Biology Internal Assessment",
+      date: "February 2023",
+      blurb: "Designed and ran a controlled experiment testing how MgSO₄ concentration affects root and shoot growth in green gram plants, with statistical hypothesis testing."
+    },
+    {
+      title: "Knowledge in “Bubbles”",
+      type: "IB Theory of Knowledge Essay",
+      date: "2023",
+      blurb: "Examined whether selective exposure to information changes the validity of knowledge claims, using history and the natural sciences as case studies."
+    },
+    {
+      title: "Big Data in Personalized Medicine",
+      type: "Research Paper — Wake Forest University",
+      date: "Fall 2023",
+      blurb: "Reviewed how large-scale molecular and clinical data is reshaping personalized treatment, and the computational and ethical challenges that come with it."
+    },
+    {
+      title: "Big Data in Politics",
+      type: "Research Presentation — Wake Forest University",
+      date: "Fall 2023",
+      blurb: "Presented on data-driven campaigning: voter micro-targeting, predictive election modeling, and contrasting case studies (the DNC's Project Narwhal vs. the Cambridge Analytica scandal)."
     }
   ],
   leadership: [
@@ -107,7 +177,9 @@ window.portfolioContent = {
       role: "Founder",
       org: "Siya Foundation",
       location: "India",
-      dates: "May 2020 – Present"
+      dates: "May 2020 – Present",
+      link: "https://www.instagram.com/siya.foundation/",
+      linkLabel: "@siya.foundation"
     },
     {
       role: "Staff Member, Benson University Staff",

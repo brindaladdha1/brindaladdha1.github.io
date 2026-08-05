@@ -6,7 +6,9 @@
     chart: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>',
     target: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>',
     route: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 6.8h7.6a3 3 0 0 1 3 3v0a3 3 0 0 1-3 3H8.2a3 3 0 0 0-3 3v0"/></svg>',
-    spark: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.8 2.8M15.2 15.2 18 18M18 6l-2.8 2.8M8.8 15.2 6 18"/></svg>'
+    spark: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.8 2.8M15.2 15.2 18 18M18 6l-2.8 2.8M8.8 15.2 6 18"/></svg>',
+    trend: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>',
+    honey: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 21 7v10l-9 5-9-5V7z"/><path d="M12 12v10M12 12 3 7M12 12l9-5"/></svg>'
   };
 
   // ---- Render expertise tags ----
@@ -91,6 +93,24 @@
     });
   }
 
+  // ---- Render writing ----
+  const writingList = document.getElementById("writing-list");
+  if (writingList && data.writing) {
+    data.writing.forEach((item) => {
+      const row = document.createElement("article");
+      row.className = "writing-item";
+      row.innerHTML = `
+        <div class="writing-item__top">
+          <h3>${item.title}</h3>
+          <span class="writing-item__date">${item.date}</span>
+        </div>
+        <p class="writing-item__type">${item.type}</p>
+        <p class="writing-item__blurb">${item.blurb}</p>
+      `;
+      writingList.appendChild(row);
+    });
+  }
+
   // ---- Render leadership ----
   const leadershipList = document.getElementById("leadership-list");
   if (leadershipList) {
@@ -102,6 +122,7 @@
         <div>
           <h3>${item.role}</h3>
           <p>${item.org} · ${item.location}</p>
+          ${item.link ? `<a class="leadership-item__link" href="${item.link}" target="_blank" rel="noreferrer">${item.linkLabel || item.link}</a>` : ""}
         </div>
       `;
       leadershipList.appendChild(row);
