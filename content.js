@@ -17,7 +17,7 @@ window.portfolioContent = {
   ],
   experience: [
     {
-      role: "Head of Marketing (Part-Time)",
+      role: "Marketing (Part-Time)",
       company: "Steward",
       location: "Remote",
       dates: "May 2026 – Present",
@@ -80,12 +80,12 @@ window.portfolioContent = {
       title: "Sonic Automotive Inventory & UX Research",
       categories: ["Data Analysis", "UX Research"],
       dates: "Summer 2025",
-      problem: "Inconsistent inventory allocation across regions, and unclear drivers behind test-drive drop-off across Sonic's dealership websites.",
-      approach: "Audited Sonic Automotive's dealership websites across multiple regional brand sites, evaluating navigation, content clarity, and conversion paths, then paired that with primary UX research (40+ participants) to translate findings into per-branch recommendations. Separately analyzed inventory data across 15+ regions to surface allocation trends and improve efficiency.",
-      tools: ["UX Audit", "Excel Modelling", "UX Research", "Stakeholder Reporting"],
+      problem: "Inconsistent inventory allocation across regions, and unclear drivers behind test-drive drop-off across Sonic's dealership websites (built on the Tactical Fleet platform).",
+      approach: "Ran a large-scale usability study through an outsourced research panel (Echobox), having 200+ participants navigate Sonic Automotive's dealership websites while recording their real-time experience; synthesized the findings, alongside a smaller 40-participant follow-up study, into per-branch UX recommendations. Separately analyzed inventory data across 15+ regions to surface allocation trends and improve efficiency.",
+      tools: ["UX Audit", "Usability Testing", "Excel Modelling", "Stakeholder Reporting"],
       metrics: [
         { value: "+18%", label: "Increase in test-drive bookings" },
-        { value: "15+", label: "U.S. regions analyzed" }
+        { value: "200+", label: "Participants in outsourced usability study" }
       ]
     },
     {
@@ -99,19 +99,6 @@ window.portfolioContent = {
       metrics: [
         { value: "10+", label: "Investor pitch calls supported" },
         { value: "3", label: "Age groups tested across ~10 localities" }
-      ]
-    },
-    {
-      icon: "trend",
-      title: "NASDAQ Forecasting with Multiple Linear Regression",
-      categories: ["Statistics", "R"],
-      dates: "December 2024",
-      problem: "Needed a defensible model for forecasting NASDAQ performance from a wide field of macroeconomic and market indicators.",
-      approach: "Built a multiple linear regression model in R on a 70/30 train-test split, then iteratively refined it by removing high-p-value predictors (oil, gold, crypto volatility, recession and election flags) one at a time and re-validating, before checking residuals with Q-Q plots, confidence intervals, and ANOVA.",
-      tools: ["R", "Regression", "Feature Selection", "Residual Diagnostics"],
-      metrics: [
-        { value: "70/30", label: "Train / test split for validation" },
-        { value: "MSE", label: "Model evaluated on test-set prediction error" }
       ]
     },
     {
@@ -130,22 +117,34 @@ window.portfolioContent = {
   ],
   writing: [
     {
-      title: "Conflict and Identity in The Palace of Illusions",
-      type: "IB Extended Essay — English A",
-      date: "May 2023",
-      blurb: "3,900-word close reading of Chitra Banerjee Divakaruni's retelling of the Mahabharata, examining how internal and external conflict shape Panchali's evolving sense of self."
+      title: "Big Data in Politics",
+      type: "Research Presentation — Wake Forest University",
+      date: "November 2023",
+      blurb: "Presented on data-driven campaigning: voter micro-targeting, predictive election modeling, and contrasting case studies (the DNC's Project Narwhal vs. the Cambridge Analytica scandal)."
     },
     {
-      title: "Conflict and Identity in Persepolis",
-      type: "IB Higher Level Essay — English A: Literature",
-      date: "May 2023",
-      blurb: "Analysis of how political upheaval in 1980s Iran shapes Marji's coming-of-age in Marjane Satrapi's graphic memoir."
+      title: "Big Data in Personalized Medicine",
+      type: "Research Paper — Wake Forest University",
+      date: "November 2023",
+      blurb: "Reviewed how large-scale molecular and clinical data is reshaping personalized treatment, and the computational and ethical challenges that come with it."
     },
     {
       title: "BMI Change: Boarding School vs. Home",
       type: "IB Mathematics IA — Analysis & Approaches SL",
-      date: "May 2023",
+      date: "March 2023",
       blurb: "Applied a paired t-test, Q-Q plots, and normal distribution testing to self-collected data investigating how routine affects body weight."
+    },
+    {
+      title: "Conflict and Identity in Persepolis",
+      type: "IB Higher Level Essay — English A: Literature",
+      date: "March 2023",
+      blurb: "Analysis of how political upheaval in 1980s Iran shapes Marji's coming-of-age in Marjane Satrapi's graphic memoir."
+    },
+    {
+      title: "Conflict and Identity in The Palace of Illusions",
+      type: "IB Extended Essay — English A",
+      date: "February 2023",
+      blurb: "3,900-word close reading of Chitra Banerjee Divakaruni's retelling of the Mahabharata, examining how internal and external conflict shape Panchali's evolving sense of self."
     },
     {
       title: "Salt Concentration & Plant Growth",
@@ -156,20 +155,8 @@ window.portfolioContent = {
     {
       title: "Knowledge in “Bubbles”",
       type: "IB Theory of Knowledge Essay",
-      date: "2023",
+      date: "February 2023",
       blurb: "Examined whether selective exposure to information changes the validity of knowledge claims, using history and the natural sciences as case studies."
-    },
-    {
-      title: "Big Data in Personalized Medicine",
-      type: "Research Paper — Wake Forest University",
-      date: "Fall 2023",
-      blurb: "Reviewed how large-scale molecular and clinical data is reshaping personalized treatment, and the computational and ethical challenges that come with it."
-    },
-    {
-      title: "Big Data in Politics",
-      type: "Research Presentation — Wake Forest University",
-      date: "Fall 2023",
-      blurb: "Presented on data-driven campaigning: voter micro-targeting, predictive election modeling, and contrasting case studies (the DNC's Project Narwhal vs. the Cambridge Analytica scandal)."
     }
   ],
   leadership: [
@@ -179,19 +166,45 @@ window.portfolioContent = {
       location: "India",
       dates: "May 2020 – Present",
       link: "https://www.instagram.com/siya.foundation/",
-      linkLabel: "@siya.foundation"
+      linkLabel: "@siya.foundation",
+      bullets: [
+        "Founded and run an organization providing menstrual health and hygiene access to underprivileged women across India.",
+        "Crowdfunded $10,000+, funding health kits distributed to women across India.",
+        "Designed and launched an automated, remote-managed volunteer program: applicants fill out a form, are reviewed by a India-based team member, then independently crowdfund and assemble their own kits to earn certification.",
+        "Grew a network of 20+ volunteers across India, reaching 500+ women, with a growing following on Instagram."
+      ]
     },
     {
       role: "Staff Member, Benson University Staff",
       org: "Wake Forest University",
       location: "Winston-Salem, NC",
-      dates: "May 2025 – May 2026"
+      dates: "May 2025 – May 2026",
+      bullets: [
+        "Oversaw the Fireside Crew, keeping day-to-day operations in Wake Forest's fireside gathering space running smoothly.",
+        "Managed scheduling and on-the-ground logistics, requiring consistent reliability and organization."
+      ]
     },
     {
       role: "Resident Advisor",
       org: "Wake Forest University",
       location: "Winston-Salem, NC",
-      dates: "May 2024 – May 2025"
+      dates: "May 2024 – May 2025",
+      bullets: [
+        "Planned and ran community-building events for residents throughout the year.",
+        "Shared on-call duty rotations as part of an RA team, responding to resident needs and incidents in real time.",
+        "Built relationships with residents to foster a supportive, inclusive living environment."
+      ]
+    },
+    {
+      role: "House Captain & Student Council Prefect",
+      org: "The International School Bangalore (TISB)",
+      location: "Bangalore, India",
+      dates: "2022 – 2023",
+      bullets: [
+        "Elected House Captain and Student Council Prefect, representing student interests and school spirit initiatives.",
+        "Served as Team Manager for JGBA, the school's basketball league, building team rapport and strategy that helped the team compete for the cup.",
+        "Organized community-building events (dance parties, bonfire evenings, talent shows) to strengthen school-wide camaraderie."
+      ]
     }
   ]
 };

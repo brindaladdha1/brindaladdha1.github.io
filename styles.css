@@ -371,6 +371,12 @@ h1, h2, h3, h4 {
 
 .education-card h3 { font-size: 17px; margin-bottom: 6px; }
 
+.education-card--primary h3 {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--white);
+}
+
 .education-card__org { font-size: 14px; color: var(--slate); margin: 0; }
 
 .education-card__date {
@@ -586,9 +592,9 @@ h1, h2, h3, h4 {
 
 .leadership-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
-  padding: 18px 0;
+  padding: 24px 0;
   border-bottom: 1px solid var(--lightest-navy);
 }
 
@@ -597,9 +603,10 @@ h1, h2, h3, h4 {
   color: var(--blue);
   font-size: 13px;
   min-width: 160px;
+  padding-top: 2px;
 }
 
-.leadership-item h3 { font-size: 16px; margin-bottom: 4px; }
+.leadership-item h3 { font-size: 17px; margin-bottom: 4px; }
 .leadership-item p { margin: 0; font-size: 14px; color: var(--slate); }
 
 .leadership-item__link {
@@ -611,6 +618,28 @@ h1, h2, h3, h4 {
 }
 
 .leadership-item__link:hover { text-decoration: underline; }
+
+.leadership-item__bullets {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 720px;
+}
+
+.leadership-item__bullets li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--slate);
+}
+
+.leadership-item__bullets li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+}
 
 /* Contact */
 .section--contact { text-align: center; border-top: none; padding-top: 40px; }

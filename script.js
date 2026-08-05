@@ -123,6 +123,7 @@
           <h3>${item.role}</h3>
           <p>${item.org} · ${item.location}</p>
           ${item.link ? `<a class="leadership-item__link" href="${item.link}" target="_blank" rel="noreferrer">${item.linkLabel || item.link}</a>` : ""}
+          ${item.bullets ? `<ul class="leadership-item__bullets">${item.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>` : ""}
         </div>
       `;
       leadershipList.appendChild(row);

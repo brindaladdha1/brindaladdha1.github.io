@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=2" />
+<link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
 <div class="site-shell">
@@ -34,8 +34,8 @@
         <a href="#education" class="nav-link"><span>02.</span> Education</a>
         <a href="#experience" class="nav-link"><span>03.</span> Experience</a>
         <a href="#work" class="nav-link"><span>04.</span> Projects</a>
-        <a href="#writing" class="nav-link"><span>05.</span> Writing</a>
-        <a href="#leadership" class="nav-link"><span>06.</span> Leadership</a>
+        <a href="#leadership" class="nav-link"><span>05.</span> Leadership</a>
+        <a href="#writing" class="nav-link"><span>06.</span> Writing</a>
         <a href="#contact" class="nav-link"><span>07.</span> Contact</a>
       </nav>
 
@@ -131,24 +131,24 @@
           <span class="section-line" aria-hidden="true"></span>
         </div>
         <div class="education-list">
-          <div class="education-card">
+          <div class="education-card education-card--primary">
             <div class="education-card__main">
-              <h3>Master of Science in Business Analytics</h3>
-              <p class="education-card__org">Wake Forest University School of Business &middot; Winston-Salem, NC</p>
+              <h3>Wake Forest University School of Business</h3>
+              <p class="education-card__org">Master of Science in Business Analytics &middot; Winston-Salem, NC</p>
             </div>
             <p class="education-card__date">May 2027</p>
           </div>
-          <div class="education-card">
+          <div class="education-card education-card--primary">
             <div class="education-card__main">
-              <h3>Bachelor of Arts in Statistics, Minor in Marketing Communication</h3>
-              <p class="education-card__org">Wake Forest University &middot; Winston-Salem, NC</p>
+              <h3>Wake Forest University</h3>
+              <p class="education-card__org">Bachelor of Arts in Statistics, Minor in Marketing Communication &middot; Winston-Salem, NC</p>
             </div>
             <p class="education-card__date">May 2026</p>
           </div>
-          <div class="education-card">
+          <div class="education-card education-card--primary">
             <div class="education-card__main">
-              <h3>Summer School — Marketing</h3>
-              <p class="education-card__org">London School of Economics</p>
+              <h3>London School of Economics</h3>
+              <p class="education-card__org">Summer School &mdash; Marketing</p>
             </div>
             <p class="education-card__date">August 2025</p>
           </div>
@@ -188,10 +188,21 @@
       </div>
     </section>
 
-    <section class="section" id="writing" aria-labelledby="writing-title">
+    <section class="section" id="leadership" aria-labelledby="leadership-title">
       <div class="container">
         <div class="section-heading">
           <p class="section-number">05.</p>
+          <h2 id="leadership-title">Leadership &amp; Activities</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+        <div class="leadership-list" id="leadership-list"></div>
+      </div>
+    </section>
+
+    <section class="section" id="writing" aria-labelledby="writing-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-number">06.</p>
           <h2 id="writing-title">Academic Writing &amp; Research</h2>
           <span class="section-line" aria-hidden="true"></span>
         </div>
@@ -200,17 +211,6 @@
           how I approach evidence, argument, and analysis today.
         </p>
         <div class="writing-list" id="writing-list"></div>
-      </div>
-    </section>
-
-    <section class="section" id="leadership" aria-labelledby="leadership-title">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-number">06.</p>
-          <h2 id="leadership-title">Leadership &amp; Activities</h2>
-          <span class="section-line" aria-hidden="true"></span>
-        </div>
-        <div class="leadership-list" id="leadership-list"></div>
       </div>
     </section>
 
@@ -241,7 +241,7 @@
   </footer>
 </div>
 
-<script src="content.js?v=2"></script>
-<script src="script.js?v=2"></script>
+<script src="content.js?v=3"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
