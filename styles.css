@@ -285,6 +285,11 @@ h1, h2, h3, h4 {
 
 .portrait-frame__close:hover { background: rgba(10, 25, 47, 0.95); }
 
+.portrait-frame__play[hidden],
+.portrait-frame__close[hidden] {
+  display: none;
+}
+
 /* Hero typewriter effect */
 #hero-title.is-typing::after,
 #hero-statement.is-typing::after {
