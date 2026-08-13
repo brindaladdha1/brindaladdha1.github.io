@@ -52,14 +52,16 @@ window.portfolioContent = {
   projects: [
     {
       icon: "chart",
-      title: "Statistical Analysis Portfolio",
+      title: "Diamond Price Analytics",
       categories: ["Statistics", "GitHub"],
-      dates: "August 2026",
-      problem: "Needed a portfolio-ready body of work demonstrating applied statistical reasoning on a real dataset.",
-      approach: "Built a statistics project covering descriptive statistics, probability, inference, and regression on GitHub with a maintained decision log documenting every modeling choice.",
-      tools: ["Python", "R", "Regression", "Hypothesis Testing"],
+      dates: "MSBA Coursework, 2026",
+      problem: "Needed a rigorous, real-dataset application of core statistical methods as part of Wake Forest's MSBA statistics sequence.",
+      approach: "Worked with a team to analyze what drives diamond pricing, structured assignment-by-assignment: descriptive statistics and visualization, probability and distribution analysis, confidence intervals and hypothesis testing, and regression modeling. Independently maintained a dated decision log documenting the analytical choices behind each stage.",
+      tools: ["Descriptive Statistics", "Hypothesis Testing", "Regression", "Decision Log"],
+      githubUrl: "https://github.com/brindaladdha1/diamond-price-analytics",
       metrics: [
-        { value: "GitHub", label: "Published, portfolio-ready repository" }
+        { value: "6", label: "Assignments: dataset through regression" },
+        { value: "Team", label: "Project with individual decision log" }
       ]
     },
     {
@@ -67,7 +69,7 @@ window.portfolioContent = {
       title: "KPMG Digital Accessibility Case Competition",
       categories: ["Consulting", "Strategy"],
       dates: "March 2024",
-      problem: "Underbanked populations in the U.S. face structural digital accessibility barriers with no clear resolution framework.",
+      problem: "Underbanked populations in the U.S. face structural digital accessibility barriers with no clear resolution framework, a gap that's drawn increasing regulatory and market attention as financial institutions push more services online.",
       approach: "Led a team through a full case framework as Team Lead, developing 10 actionable recommendations and presenting findings to industry professionals.",
       tools: ["Case Framework Development", "Team Leadership", "Presentation"],
       metrics: [
@@ -80,7 +82,7 @@ window.portfolioContent = {
       title: "Sonic Automotive Inventory & UX Research",
       categories: ["Data Analysis", "UX Research"],
       dates: "Summer 2025",
-      problem: "Inconsistent inventory allocation across regions, and unclear drivers behind test-drive drop-off across Sonic's dealership websites (built on the Tactical Fleet platform).",
+      problem: "Inconsistent inventory allocation across regions, and unclear drivers behind test-drive drop-off across Sonic's dealership websites (built on the Tactical Fleet platform) — at a time when dealer groups are competing harder than ever for digital-first car buyers who research and shortlist entirely online before ever visiting a lot.",
       approach: "Ran a large-scale usability study through an outsourced research panel (Echobox), having 200+ participants navigate Sonic Automotive's dealership websites while recording their real-time experience; synthesized the findings, alongside a smaller 40-participant follow-up study, into per-branch UX recommendations. Separately analyzed inventory data across 15+ regions to surface allocation trends and improve efficiency.",
       tools: ["UX Audit", "Usability Testing", "Excel Modelling", "Stakeholder Reporting"],
       metrics: [
