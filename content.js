@@ -73,6 +73,8 @@ window.portfolioContent = {
       problem: "Underbanked populations in the U.S. face structural digital accessibility barriers with no clear resolution framework, a gap that's drawn increasing regulatory and market attention as financial institutions push more services online.",
       approach: "Led a team through a full case framework as Team Lead, developing 10 actionable recommendations and presenting findings to industry professionals.",
       tools: ["Case Framework Development", "Team Leadership", "Presentation"],
+      link: "https://canva.link/kv6kbgdhebyoisj",
+      linkLabel: "View case competition deck →",
       metrics: [
         { value: "2nd", label: "Place out of ~30 teams" },
         { value: "10", label: "Actionable recommendations delivered" }
