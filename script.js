@@ -167,4 +167,57 @@
     );
     sections.forEach((section) => observer.observe(section));
   }
+
+  // ---- Portrait: click to reveal intro video ----
+  const portraitImg = document.getElementById("portrait-img");
+  const portraitVideo = document.getElementById("portrait-video");
+  const portraitPlayBtn = document.getElementById("portrait-play-btn");
+  const portraitCloseBtn = document.getElementById("portrait-close-btn");
+
+  if (portraitImg && portraitVideo && portraitPlayBtn && portraitCloseBtn) {
+    portraitPlayBtn.addEventListener("click", () => {
+      portraitImg.hidden = true;
+      portraitPlayBtn.hidden = true;
+      portraitVideo.hidden = false;
+      portraitCloseBtn.hidden = false;
+      portraitVideo.currentTime = 0;
+      portraitVideo.play().catch(() => {});
+    });
+
+    portraitCloseBtn.addEventListener("click", () => {
+      portraitVideo.pause();
+      portraitVideo.hidden = true;
+      portraitCloseBtn.hidden = true;
+      portraitImg.hidden = false;
+      portraitPlayBtn.hidden = false;
+    });
+  }
+
+  // ---- Hero: typewriter effect for name + statement ----
+  function typeWriter(el, text, speed, onDone) {
+    el.textContent = "";
+    el.classList.add("is-typing");
+    let i = 0;
+    (function step() {
+      if (i <= text.length) {
+        el.textContent = text.slice(0, i);
+        i += 1;
+        setTimeout(step, speed);
+      } else {
+        el.classList.remove("is-typing");
+        if (onDone) onDone();
+      }
+    })();
+  }
+
+  const heroTitle = document.getElementById("hero-title");
+  const heroStatement = document.getElementById("hero-statement");
+  if (heroTitle && heroStatement) {
+    const titleText = heroTitle.textContent;
+    const statementText = heroStatement.textContent;
+    heroStatement.textContent = "";
+    typeWriter(heroTitle, titleText, 75, () => {
+      typeWriter(heroStatement, statementText, 26);
+    });
+  }
 })();

@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=5" />
+<link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
 <div class="site-shell">
@@ -52,7 +52,7 @@
         <div class="hero__copy">
           <p class="hero__intro">Hi, my name is</p>
           <h1 id="hero-title">Brinda Laddha.</h1>
-          <h2 class="hero__statement">I turn messy data into decisions people can act on.</h2>
+          <h2 id="hero-statement" class="hero__statement">I turn messy data into decisions people can act on.</h2>
           <p class="hero__summary">
             MSBA candidate and Statistics graduate with cross-functional experience in marketing strategy, data analysis,
             and venture capital research &mdash; from improving automotive inventory allocation to structuring
@@ -66,8 +66,16 @@
           </div>
         </div>
         <div class="hero__portrait">
-          <div class="portrait-frame portrait-frame--subtle">
-            <img src="Brinda_Laddha.jpeg" alt="Portrait of Brinda Laddha" />
+          <div class="portrait-frame portrait-frame--subtle" id="portrait-frame">
+            <img src="Brinda_Laddha.jpeg" alt="Portrait of Brinda Laddha" id="portrait-img" />
+            <video id="portrait-video" class="portrait-frame__video" src="brinda-intro.mp4" playsinline controls preload="none" hidden></video>
+            <button type="button" class="portrait-frame__play" id="portrait-play-btn" aria-label="Play intro video">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <span>Watch intro</span>
+            </button>
+            <button type="button" class="portrait-frame__close" id="portrait-close-btn" aria-label="Close video" hidden>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
           </div>
         </div>
       </div>
@@ -178,12 +186,6 @@
             <p class="education-card__date">Certification</p>
           </div>
         </div>
-        <div class="video-callout">
-          <p class="video-callout__label">Watch: Kathak dance portfolio</p>
-          <div class="video-callout__frame">
-            <iframe src="https://www.youtube.com/embed/MetsLhJ9saA" title="Brinda Laddha — Kathak Dance Portfolio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -224,6 +226,12 @@
           <span class="section-line" aria-hidden="true"></span>
         </div>
         <div class="leadership-list" id="leadership-list"></div>
+        <div class="video-callout">
+          <p class="video-callout__label">Watch: Kathak dance portfolio</p>
+          <div class="video-callout__frame">
+            <iframe src="https://www.youtube.com/embed/MetsLhJ9saA" title="Brinda Laddha — Kathak Dance Portfolio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -276,7 +284,7 @@
   </footer>
 </div>
 
-<script src="content.js?v=7"></script>
-<script src="script.js?v=6"></script>
+<script src="content.js?v=8"></script>
+<script src="script.js?v=7"></script>
 </body>
 </html>
