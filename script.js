@@ -108,6 +108,7 @@
         </div>
         <p class="writing-item__type">${item.type}</p>
         <p class="writing-item__blurb">${item.blurb}</p>
+        ${item.fileUrl ? `<a class="writing-item__link" href="${item.fileUrl}" target="_blank" rel="noreferrer">${item.fileLabel || "Read the full paper →"}</a>` : ""}
       `;
       writingList.appendChild(row);
     });

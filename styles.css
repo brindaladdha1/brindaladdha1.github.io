@@ -667,6 +667,16 @@ h1, h2, h3, h4 {
   max-width: 720px;
 }
 
+.writing-item__link {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--blue);
+}
+
+.writing-item__link:hover { text-decoration: underline; }
+
 /* Leadership */
 .leadership-list { display: flex; flex-direction: column; }
 

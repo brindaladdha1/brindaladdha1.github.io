@@ -122,46 +122,92 @@ window.portfolioContent = {
   ],
   writing: [
     {
+      title: "Bollywood as a Tool of Political Messaging in Contemporary India",
+      type: "Term Paper — POL 241, Wake Forest University",
+      date: "April 2026",
+      blurb: "Analyzed how Bollywood cinema functions as a subtle but powerful medium of political messaging, tracing its evolution from post-independence nation-building narratives to the contemporary nationalist wave (Uri: The Surgical Strike, The Kashmir Files), alongside the Indian state's growing engagement with the film industry.",
+      fileUrl: "writing/POL%20241%20paper.pdf",
+      fileLabel: "Read the full paper →"
+    },
+    {
+      title: "HarborPoint Concierge — Capstone Deliverable",
+      type: "Marketing Capstone (COM 162) — Wake Forest University, Team Project",
+      date: "Fall 2025",
+      blurb: "Led market research, brand positioning, and channel strategy for HarborPoint, a caregiver concierge service, as part of a 5-person team — translating PESTEL/SWOT and target-audience research into a full go-to-market plan, including creative concepts, a 4-phase launch roadmap, and a $4.2M paid media budget allocation.",
+      fileUrl: "writing/Capstone%20Delieverable%20Submission.pptx",
+      fileLabel: "View the deck →"
+    },
+    {
+      title: "Media Bias and the Citizenship Amendment Act: An Analysis of Indian News Coverage",
+      type: "Term Paper — COM 336, Information Rhetoric, Wake Forest University",
+      date: "May 2025",
+      blurb: "Examined how Indian mainstream and independent news outlets framed coverage of the 2019–2020 CAA protests, analyzing patterns of pro-government bias, the suppression of independent journalism, and the role of social media in amplifying polarized narratives.",
+      fileUrl: "writing/336-%20term%20paper-%20FINAL%20DRAFT..docx",
+      fileLabel: "Read the full paper →"
+    },
+    {
       title: "Big Data in Politics",
       type: "Research Presentation — Wake Forest University",
       date: "November 2023",
-      blurb: "Presented on data-driven campaigning: voter micro-targeting, predictive election modeling, and contrasting case studies (the DNC's Project Narwhal vs. the Cambridge Analytica scandal)."
+      blurb: "Presented on data-driven campaigning: voter micro-targeting, predictive election modeling, and contrasting case studies (the DNC's Project Narwhal vs. the Cambridge Analytica scandal).",
+      fileUrl: "writing/Big%20Data%20in%20Politics.pptx",
+      fileLabel: "View the slides →"
     },
     {
       title: "Big Data in Personalized Medicine",
       type: "Research Paper — Wake Forest University",
       date: "November 2023",
-      blurb: "Reviewed how large-scale molecular and clinical data is reshaping personalized treatment, and the computational and ethical challenges that come with it."
+      blurb: "Reviewed how large-scale molecular and clinical data is reshaping personalized treatment, and the computational and ethical challenges that come with it.",
+      fileUrl: "writing/Big%20Data%20and%20Personalised%20Medicine.docx",
+      fileLabel: "Read the full paper →"
+    },
+    {
+      title: "Cybersecurity in Fintech",
+      type: "Research Presentation — Wake Forest University",
+      date: "November 2023",
+      blurb: "Examined the escalating cyber threat landscape facing fintech firms (drawing on the 2019 Capital One breach), regulatory requirements like GLBA, PCI-DSS, and GDPR, and frameworks for building cyber resilience through governance, advanced technologies, and third-party risk management.",
+      fileUrl: "writing/CyberSecurity%20in%20Fintech.pptx",
+      fileLabel: "View the slides →"
     },
     {
       title: "BMI Change: Boarding School vs. Home",
       type: "IB Mathematics IA — Analysis & Approaches SL",
       date: "March 2023",
-      blurb: "Applied a paired t-test, Q-Q plots, and normal distribution testing to self-collected data investigating how routine affects body weight."
+      blurb: "Applied a paired t-test, Q-Q plots, and normal distribution testing to self-collected data investigating how routine affects body weight.",
+      fileUrl: "writing/Final%20FINAL%20Turn%20it%20in-%20Math%20IA-%20Brinda%20Laddha.pdf",
+      fileLabel: "Read the full paper →"
     },
     {
       title: "Conflict and Identity in Persepolis",
       type: "IB Higher Level Essay — English A: Literature",
       date: "March 2023",
-      blurb: "Analysis of how political upheaval in 1980s Iran shapes Marji's coming-of-age in Marjane Satrapi's graphic memoir."
+      blurb: "Analysis of how political upheaval in 1980s Iran shapes Marji's coming-of-age in Marjane Satrapi's graphic memoir.",
+      fileUrl: "writing/HLE%20final%20IBIS%20upload.pdf",
+      fileLabel: "Read the full paper →"
     },
     {
       title: "Conflict and Identity in The Palace of Illusions",
       type: "IB Extended Essay — English A",
       date: "February 2023",
-      blurb: "3,900-word close reading of Chitra Banerjee Divakaruni's retelling of the Mahabharata, examining how internal and external conflict shape Panchali's evolving sense of self."
+      blurb: "3,900-word close reading of Chitra Banerjee Divakaruni's retelling of the Mahabharata, examining how internal and external conflict shape Panchali's evolving sense of self.",
+      fileUrl: "writing/EE-%20final%20upload%20IBIS.pdf",
+      fileLabel: "Read the full paper →"
     },
     {
       title: "Salt Concentration & Plant Growth",
       type: "IB Biology Internal Assessment",
       date: "February 2023",
-      blurb: "Designed and ran a controlled experiment testing how MgSO₄ concentration affects root and shoot growth in green gram plants, with statistical hypothesis testing."
+      blurb: "Designed and ran a controlled experiment testing how MgSO₄ concentration affects root and shoot growth in green gram plants, with statistical hypothesis testing.",
+      fileUrl: "writing/BIO%20IA-21st%20feb.docx",
+      fileLabel: "Read the full paper →"
     },
     {
       title: "Knowledge in “Bubbles”",
       type: "IB Theory of Knowledge Essay",
       date: "February 2023",
-      blurb: "Examined whether selective exposure to information changes the validity of knowledge claims, using history and the natural sciences as case studies."
+      blurb: "Examined whether selective exposure to information changes the validity of knowledge claims, using history and the natural sciences as case studies.",
+      fileUrl: "writing/TOK%20essay%20IBIS%20upload%20.pdf",
+      fileLabel: "Read the full paper →"
     }
   ],
   leadership: [
