@@ -89,6 +89,7 @@
           ${p.metrics.map((m) => `<div><strong>${m.value}</strong><span>${m.label}</span></div>`).join("")}
         </div>
         ${p.githubUrl ? `<a class="project-card__repo-link" href="${p.githubUrl}" target="_blank" rel="noreferrer">View repository →</a>` : ""}
+        ${p.link ? `<a class="project-card__repo-link" href="${p.link}" target="_blank" rel="noreferrer">${p.linkLabel || "View project →"}</a>` : ""}
       `;
       projectGrid.appendChild(card);
     });
