@@ -35,6 +35,7 @@ window.portfolioContent = {
       summary: [
         "Analyzed inventory data across 15+ U.S. regions, identifying trends and building models that improved allocation efficiency.",
         "Led UX research with 40+ participants, translating findings into recommendations that increased test-drive bookings by 18%.",
+        "Ran a large-scale usability study through an outsourced research panel (Echobox), with 200+ participants navigating Sonic Automotive's dealership websites (built on the Tactical Fleet platform) while their real-time experience was recorded.",
         "Synthesized findings into weekly reports for senior stakeholders, directly informing 3+ major business and UX decisions."
       ]
     },
@@ -96,7 +97,7 @@ window.portfolioContent = {
       categories: ["Marketing", "Growth"],
       dates: "2026",
       problem: "An early-stage founder needed a fundraising narrative and structured, cross-demographic user feedback to prioritize the product roadmap.",
-      approach: "Built and delivered investor pitch decks for 10+ calls, designed a beta-testing methodology across 3 age groups and ~10 localities, and stood up an analytics tracking framework for the conversion funnel.",
+      approach: "Built and delivered investor pitch decks for 10+ calls, designed a beta-testing methodology across 3 age groups and ~10 localities, and stood up an analytics tracking framework (Instagram Insights + spreadsheet modelling) covering the full conversion funnel from profile visits to beta app downloads.",
       tools: ["Pitch Development", "Analytics Tracking", "Fundraising Strategy"],
       metrics: [
         { value: "10+", label: "Investor pitch calls supported" },
