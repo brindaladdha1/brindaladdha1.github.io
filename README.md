@@ -15,7 +15,7 @@ A single-page portfolio site built with plain HTML/CSS/JS, styled in a navy-and-
 This project references two files at the repo root:
 
 1. **`Brinda_Laddha.jpeg`** — your headshot photo
-2. **`Brinda Laddha_final resume aug 4.pdf`** — your resume PDF (powers the "Resume" button)
+2. **`Brinda Laddha- FInal Resume 8.6.pdf`** — your resume PDF (powers the "Resume" button)
 
 Make sure both are uploaded with those exact names, or update the paths in `index.html` to match whatever filenames you use.
 
