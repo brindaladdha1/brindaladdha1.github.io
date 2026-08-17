@@ -230,66 +230,6 @@ h1, h2, h3, h4 {
   box-shadow: 0 0 0 8px var(--blue-tint);
 }
 
-.portrait-frame__video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background: #000;
-}
-
-.portrait-frame__play {
-  position: absolute;
-  left: 50%;
-  bottom: 16px;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 16px 9px 12px;
-  border: none;
-  border-radius: 999px;
-  background: rgba(10, 25, 47, 0.82);
-  color: var(--lightest-slate);
-  font-family: var(--font-mono);
-  font-size: 12px;
-  cursor: pointer;
-  backdrop-filter: blur(2px);
-  transition: background var(--transition), transform var(--transition);
-}
-
-.portrait-frame__play svg { color: var(--blue); flex-shrink: 0; }
-
-.portrait-frame__play:hover {
-  background: rgba(10, 25, 47, 0.95);
-  transform: translateX(-50%) translateY(-2px);
-}
-
-.portrait-frame__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 26px;
-  height: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 50%;
-  background: rgba(10, 25, 47, 0.82);
-  color: var(--lightest-slate);
-  cursor: pointer;
-  transition: background var(--transition);
-}
-
-.portrait-frame__close:hover { background: rgba(10, 25, 47, 0.95); }
-
-.portrait-frame__play[hidden],
-.portrait-frame__close[hidden] {
-  display: none;
-}
-
 /* Hero typewriter effect */
 #hero-title.is-typing::after,
 #hero-statement.is-typing::after {
