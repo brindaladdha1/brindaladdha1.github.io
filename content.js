@@ -17,6 +17,17 @@ window.portfolioContent = {
   ],
   experience: [
     {
+      role: "Client Liaison, MSBA Practicum Project",
+      company: "EY",
+      location: "Winston-Salem, NC",
+      dates: "Fall 2026 – Present",
+      summary: [
+        "Serve as client liaison for a Wake Forest MSBA consulting team partnered with EY, managing communication with the EY project sponsor and aligning deliverables with client priorities.",
+        "Developing a pilot AI model aimed at improving efficiency within EY's consulting services, from scoping and data preparation through prototype evaluation.",
+        "Building an AI strategy framework to guide how the pilot could be evaluated, scaled, and adopted across EY's consulting workflows."
+      ]
+    },
+    {
       role: "Marketing (Part-Time)",
       company: "Steward",
       location: "Remote",
